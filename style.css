@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    /* height: 2000vh; */
+}
+
+h1, h2, h3, h4 , h5 , h6{
+    font-family: 'Marcellus SC', serif;
+}
+
+h1{
+ font-size: 35px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+
+p{
+    color: #ACAEB3;
+    font-size: 13px;
+}
+
+
+
+header{
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color: white;
+    position: static;
+    top: 50px;
+    width: 100vw;
+}
+
+header li{
+    transition: all 0.4s ease;
+}
+
+header a{
+    position: relative;
+    padding: 0;
+    letter-spacing: 3px;
+    font-size: 11px !important;
+}
+
+header .firstNav>ul li a::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    background-color: none;
+    transition: all 0.4s ease;
+}
+
+header .firstNav>ul li:hover a::after{
+    content: '';
+    width: 50px;
+    height: 4px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    background-color: #0E3C7B;
+}
+
+header .firstNav>ul li:nth-child(3) a::after{
+    content: '';
+    width: 50px;
+    height: 4px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    background-color: #0E3C7B;
+}
+
+#section_1{
+    background-color: #3F4448;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+#section_1 h1{
+    
+    font-size: 22px;
+}
+
+#section_1 a{
+    color: #B5AC92;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+#section_1 a:nth-child(1):hover{
+    color: white;
+}
+
+#section_1 span{
+    color: #B5AC92;
+}
+
+#section_2{
+    font-size: 14px;
+}
+#section_2 p{
+    
+    line-height: 1.8;
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background-color: #CABE9F;
+}
+
+iframe{
+    height: 500px;
+}
+
+@media only screen and (max-width: 786px) {
+    iframe{
+        height: 250px;
+    }
+  }
+
+#section_4 ul{
+    width: 100% !important;
+}
+
+#section_4 li{
+    flex: 1;
+}
+
+#section_4 button{
+    width: 100%;
+}
+
+.tab_button{
+    padding: 15px 50px;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 12px;
+    background-color: #F1F1F1;
+}
+
+
+.tab_button.active{
+    background-color: #0E3C7B;
+    color: white;
+}
+
+.tab_button.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    transform: translate(-50% , -50%) rotate(45deg);
+    height: 18px;
+    width: 18px;
+    background-color: #0E3C7B;
+}
+.tab_button:hover{
+    background-color: #0E3C7B;
+    color: white !important;
+}
+.tab_button2{
+    padding: 15px 50px;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 12px;
+    background-color: #F1F1F1;
+}
+
+
+.tab_button2.active{
+    background-color: #2C7BA2;
+    color: white;
+}
+
+.tab_button2.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    transform: translate(-50% , -50%) rotate(45deg);
+    height: 18px;
+    width: 18px;
+    background-color: #2C7BA2;
+}
+.tab_button2:hover{
+    background-color: #2C7BA2;
+    color: white !important;
+}
+#section_4 .active{
+    color: white !important;
+}
+
+.tab-content *{
+    color: #B3B5BA !important;
+    font-size: 12px;
+}
+
+
+.noBorder{
+    border: none !important;
+}
+
+.btnGolden{
+  background-color: white;
+  border: 2px solid #CABE9F;
+  font-weight: bold;
+  color: #CABE9F !important;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btnGolden:hover{
+    background-color: #CABE9F;
+    color: white !important;
+}
+
+/* .section_4>ul>.active{
+    color: white;
+    background-color: #0E3E7E;
+} */
+
+footer{
+    background: #000;
+}
+
+footer *{
+    color: white;
+}
+
+footer input, textarea{
+    border: 2px solid #B5AC92;
+    background-color: transparent;
+    padding: 10px;
+}
+
+footer input::placeholder{
+    color: rgb(172, 168, 168);
+}
+
